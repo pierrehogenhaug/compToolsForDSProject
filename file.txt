@@ -1,0 +1,30 @@
+Ok. I actually wanted to pitch on the meeting that I found a dataset also from stack exchange. In fact this dataset is a datadump of all posts, comments, users and more. It's from here: https://archive.org/details/stackexchange. The data is in xml format so it even requires a bit of preprocessing (bonus points for preprocessing, working with regex etc.). I already transformed the data into CSVs.
+
+Instead of using stackoverflow I suggest we use the stackexchange for politics. The idea is the same, i.e. find communities and understand their dynamics. However, with this dataset I believe sentiment will be more defining, i.e. in a discussion about politics compared to a discussion about code. 
+
+What I think we could do with the data:
+
+* Group all the posts into "Mother Tags" (tags that are a bit more broad, US, Donal Trump, China, Brexit, etc.). 
+    * Find relevant tags
+    * TF-IDF
+* Find subject matter experts (first with clustering and then back it with network analysis)
+    * Find active users (e.g. a user that has written more than x questions/comments)
+    * create a data frame grouped on user-level
+        * all questions a user has created
+        * all answers a user has created
+    * find relevant features to include for clustering analysis. We need to put some good thought into this so that the clusters might find experts from each Mother tag. Some suggestions are,
+        * number of questions
+        * numer of answers
+        * avg likes per question
+        * avg likes per answer
+        * question/answer max number of likes
+        * most common tag the user creates posts with
+        * most common tag a post has when the user comments 
+        * more...?
+* Network analysis
+    * construct network
+        * Nodes: every active user
+        * Edges: when a user responds to a question created by another user, we create an edge between the two users
+    * community detection
+        * louvain algorithm
+        * different algos
