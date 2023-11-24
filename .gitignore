@@ -12,3 +12,4 @@ pickle_dataframes/posts_typecasted.pkl
 pickle_dataframes/tags_typecasted.pkl
 pickle_dataframes/users_typecasted.pkl
 .DS_Store
+file.txt
