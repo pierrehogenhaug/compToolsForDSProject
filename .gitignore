@@ -1,3 +1,14 @@
 input/
 output/
 picklefiles/
+pickle_dataframes/comments_typecasted.pkl
+pickle_dataframes/df_comments.pkl
+pickle_dataframes/df_postlinks.pkl
+pickle_dataframes/df_posts.pkl
+pickle_dataframes/df_tags.pkl
+pickle_dataframes/df_users.pkl
+pickle_dataframes/post_links_typecasted.pkl
+pickle_dataframes/posts_typecasted.pkl
+pickle_dataframes/tags_typecasted.pkl
+pickle_dataframes/users_typecasted.pkl
+.DS_Store
