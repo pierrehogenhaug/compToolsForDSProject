@@ -13,3 +13,4 @@ pickle_dataframes/tags_typecasted.pkl
 pickle_dataframes/users_typecasted.pkl
 .DS_Store
 wandb/
+sample_datasets/
